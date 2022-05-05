@@ -16,6 +16,7 @@ while ( count < 50 ) {
         count += array[i];
     }
 }
+console.log(array);
 console.log(count);
 
 
