@@ -14,9 +14,12 @@ for ( let i = 0; i < userInput; i++){
         array.push(Number(Math.floor((Math.random() * 100) + 1)));
     }
 
-    // stampo il risultato
     console.log(array);
+    // stampo il risultato
+    
 }
+
+
 
 
 
