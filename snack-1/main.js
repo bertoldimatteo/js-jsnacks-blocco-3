@@ -8,6 +8,7 @@ let count = 0;
 
 // creo condizione indefinita fino a quando non si soddisfa la richiesta
 while ( count < 50 ) {
+    count = 0;
     // creo form per user input di un numero
     let userInput = Number(prompt("Inserisci un numero"));
     array.push(userInput);
