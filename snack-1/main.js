@@ -4,11 +4,18 @@
 
 // creo array vuoto
 const array = [];
-let total = 0;
+let count = 0;
 
 // creo condizione indefinita fino a quando non si soddisfa la richiesta
-while( array < 3) {
+while ( count < 50 ) {
     // creo form per user input di un numero
-    const userInput = Number(prompt("Inserisci un numero"));
-    array.push(userInput); 
+    let userInput = Number(prompt("Inserisci un numero"));
+    array.push(userInput);
+    
+    for( let i = 0; i < array.length; i++){
+        count += array[i];
+    }
 }
+console.log(count);
+
+
