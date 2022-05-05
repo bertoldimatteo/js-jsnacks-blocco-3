@@ -5,18 +5,19 @@
 
 const arrayNumbers = [1,3,5,8,12,20,60,52,14,17,63,89];
 
-let greenNumber;
-let redNumbers;
+let greenNumbers = [];
+let redNumbers = [];
 
 const greenText = document.getElementById("green").style.color = "green";
 const redText = document.getElementById("red").style.color = "red";
 
-for (let i = 0; i < arrayNumbers.length; i++) {
-    if (arrayNumbers % 2 == 0){
-        greenNumber = arrayNumbers;
-        console.log(greenNumber);
-    } else if ( arrayNumbers % 2 == 1){
-        redNumbers = arrayNumbers;
-        console.log(redNumbers);
+arrayNumbers.forEach(number => {
+    if (number % 2 == 0) {
+      greenNumbers.push(number);
+      document.getElementById("green").innerHTML = greenNumbers;
+    } else if (number % 2 == 1) {
+        redNumbers.push(number);
+        document.getElementById("red").innerHTML = redNumbers;
     }
 }
+);
