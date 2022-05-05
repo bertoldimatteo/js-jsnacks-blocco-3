@@ -5,22 +5,18 @@
 
 const arrayNumbers = [1,3,5,8,12,20,60,52,14,17,63,89];
 
-const greenNumbers = [];
-const redNumbers = [];
+let greenNumber;
+let redNumbers;
 
 const greenText = document.getElementById("green").style.color = "green";
 const redText = document.getElementById("red").style.color = "red";
 
 for (let i = 0; i < arrayNumbers.length; i++) {
-    if (arrayNumbers % 2 == 0) {
-        greenNumbers.push(arrayNumbers);
-        const pushGreen = document.getElementById("green").innerHTML = greenNumbers;
-    } else if ( arrayNumbers % 2 == 1) {
-        redNumbers.push(arrayNumbers);
-        const pushRed = document.getElementById("red").innerHTML = redNumbers;
+    if (arrayNumbers % 2 == 0){
+        greenNumber = arrayNumbers;
+        console.log(greenNumber);
+    } else if ( arrayNumbers % 2 == 1){
+        redNumbers = arrayNumbers;
+        console.log(redNumbers);
     }
 }
-
-
-
-
